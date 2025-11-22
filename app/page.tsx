@@ -19,7 +19,7 @@ export default function Home() {
         async function cargarModelo() {
             try {
                 // RUTA CORREGIDA: Debe coincidir con la carpeta 'tfjs_target_dir' dentro de 'public'.
-                const m = await tf.loadGraphModel('/tfjs_target_dir/model.json');
+                const m = await tf.loadGraphModel('/model/model.json');
                 
                 // setModelo ahora acepta el tipo GraphModel
                 setModelo(m); 
